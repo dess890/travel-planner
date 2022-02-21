@@ -1,10 +1,6 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  font-family: 'Cutive Mono', monospace !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +31,86 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.search-results {
+  float: left;
+  text-align: left;
+  margin-top: -22%;
+  width: 50%;
+  height: 50%;
+            top: 25%;
+            left: 58%;
+            right: 80%; 
+            
+}
+
+.navbar {
+  display: flex;
+  
+}
+.navbar2 {
+display: flex;
+justify-content: space-between;
+}
+
+.navbar2 a {
+  margin-left: 15px;
+  color: white;
+}
+
+.link {
+  display: flex;
+  align-items: flex-start;
+flex-wrap: nowrap;
+}
+
+.planner {
+  height: 100px;
+}
+
+.hiwheader {
+  text-align: center;
+}
+ .div1 {
+   float: left;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .div2 {
+  float: right;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.help {
+  float: right;
+  width: 100%;
+  height: 100%;
+}
+.resultspg {
+  display: flex;
+ justify-content: flex-end;
+ margin-left: 100%;
+  width: 100%;
+  height: 100%;
+   margin-top: -10%;
+  margin-right: -100%;
+  margin-left: 5%; 
+}
+
+.imgforhiw {
+  padding-top: 20%;
+  width: 33%;
+  display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }

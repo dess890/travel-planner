@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import { Link } from 'react-router-dom';
 import './App.css';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import { Route, Routes } from 'react-router-dom';
+import Results from './pages/Results';
+import { Wrapper } from '@googlemaps/react-wrapper';
+import HowItWorks from './pages/HowItWorks'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Wrapper apiKey='AIzaSyC_n2qTp9TfUfmfd9QpWl1-XkgrLfTABKI' libraries={['places']}>
+      <div className="App">
+        <Navbar />
+        <div style={{ display: 'inline-flex' }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
+          </Routes>
+        </div>
+        <Routes>
+          <Route path="/Results" element={<Results />} />
+        </Routes>
+        <Routes>
+          <Route path="/HowItWorks" element={<HowItWorks />} />
+        </Routes>
+      </div>
+    </Wrapper>
+  )
+
 }
 
 export default App;
